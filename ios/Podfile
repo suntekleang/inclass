@@ -1,0 +1,38 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+
+target 'InClassApp' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for InClassApp
+  pod 'Firebase/Core'
+  pod 'Firebase/Storage'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
+  # target 'InClassApp-tvOSTests' do
+  #   inherit! :search_paths
+  #   # Pods for testing
+  # end
+
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
+  target 'InClassAppTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+# target 'InClassApp-tvOS' do
+#   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+#   # use_frameworks!
+
+#   # Pods for InClassApp-tvOS
+
+#   target 'InClassApp-tvOSTests' do
+#     inherit! :search_paths
+#     # Pods for testing
+#   end
+
+# end
